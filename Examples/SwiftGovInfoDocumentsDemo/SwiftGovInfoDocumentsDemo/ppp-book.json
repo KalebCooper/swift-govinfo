@@ -1,0 +1,35 @@
+{
+    "dateIssued": "1929-03-04",
+    "documentType": "PPP",
+    "packageId": "PPP-1929-book1",
+    "collectionCode": "PPP",
+    "detailsLink": "https://www.govinfo.gov/app/details/PPP-1929-book1",
+    "title": "Public Papers of the Presidents of the United States: Herbert Hoover (1929)",
+    "branch": "executive",
+    "collectionName": "Public Papers of the Presidents of the United States",
+    "download": {
+        "premisLink": "https://api.govinfo.gov/packages/PPP-1929-book1/premis",
+        "zipLink": "https://api.govinfo.gov/packages/PPP-1929-book1/zip",
+        "modsLink": "https://api.govinfo.gov/packages/PPP-1929-book1/mods",
+        "pdfLink": "https://api.govinfo.gov/packages/PPP-1929-book1/pdf"
+    },
+    "pages": "870",
+    "governmentAuthor2": "Office of the Federal Register",
+    "governmentAuthor1": "General Services Administration",
+    "publisher": "Office of the Federal Register, National Archives and Records Administration",
+    "suDocClassNumber": "GS 4.113:929",
+    "docClass": "PPP",
+    "lastModified": "2025-03-08T01:50:33Z",
+    "category": "Budget and Presidential Materials",
+    "otherIdentifier": {"ils-system-id": "000636663"},
+    "granulesLink": "https://api.govinfo.gov/packages/PPP-1929-book1/granules?offsetMark=*&pageSize=100",
+    "president": {
+        "names": [
+            {"authority-fnf": "Herbert Hoover"},
+            {"authority-lnf": "Hoover, Herbert"},
+            {"authority-other": "Herbert C. Hoover"}
+        ],
+        "id": "HCH",
+        "party": "R"
+    }
+}
