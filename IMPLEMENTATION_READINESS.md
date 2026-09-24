@@ -1,43 +1,47 @@
 # Implementation readiness
 
-## Current state
+## Implemented source boundary
 
-This repository has infrastructure only: an empty manifest, formatting policy, license, documentation,
-scaffold validation, guarded source scripts, and disabled source workflow templates. There are no
-products, targets, dependencies, version pins, fixtures, DocC catalogs, demos, releases, or remote.
-The explicit empty default trait is intentional; HTTPPortable is not exposed before integration.
+`SwiftGovInfoDocumentsModels` and `SwiftGovInfoDocuments` are implemented independent products.
+The models target has no third-party dependencies. The SDK uses public swifty-networking 1.3.1,
+swift-http-types, and Swift Crypto for incremental SHA-256. Default and HTTPPortable graphs resolve
+from public sources; the checked-in lockfile retains the portable superset.
 
-## Networking prerequisite
+Implemented vertical slices include package/granule detail; lazy package/granule pages and items;
+collection discovery; modification/publication windows; relationship directories and linked records;
+advertised metadata/content representations; pure BILLSTATUS/source XML decoding; bounded response
+receipts and streamed asset receipts. All operations have everyday, request, and endpoint access.
 
-Complete and validate the separate swifty-networking work before implementing this service. Select
-released dependency floors only after its required response receipt, pagination, content, and
-portable transport contracts are available. Add HTTPPortable forwarding and the trait-on resolved
-superset with the first real SDK targets; do not fabricate pins or placeholder targets.
+Current/historical source bodies, complete provenance receipts, deterministic Swift Testing targets,
+models-first DocC catalogs, and a local-package iOS demo are present. Test-support resources are not
+part of either public library product. SDK code contains no environment access, wall-clock reads,
+unsafe code, UI framework, persistence, cross-provider joins, or eager whole-history fetch.
 
-## Planned service boundary
+## Verification record
 
-`SwiftGovInfoDocumentsModels` describes collection discovery, packages, granules, related records,
-representations, and required bulk formats without dependencies. `SwiftGovInfoDocuments` executes
-those descriptions. These names are planned, not implemented products.
+Library verification passed: source/receipt checks, 51 source-checker planted-violation arms and
+7 receipt-checker negative arms, 42 macOS cases through Xcode MCP, and 36 test functions in nine
+suites in each Linux trait configuration. The fresh iOS package build and models-first DocC
+conversion/merge/static output passed, with zero documentation warnings. The iOS demo builds for
+26.5; its runtime check remains in progress. Final evidence paths and unavailable gates will be
+recorded with the demo qualification commit.
 
-Before API work, reverify [GovInfo's official contract](https://github.com/usgpo/api). Required facts
-include explicit API.data.gov credentials, quota headers, `nextPage`/`offsetMark`, collection page
-bounds, and generated assets returning 503 with Retry-After. Modification timestamps and publication
-dates describe different facts. MODS metadata is not full document text. Book-only publications can
-have zero granules; preserve volume/page access. Collection identifiers remain open. API coverage
-must not be presented as a complete census of historical documents or authoritative legal status.
+## Source qualification and coverage
 
-## Gates before source CI is enabled
+See [Source verification](Documentation/SOURCE_VERIFICATION.md) for official API links, verified
+public dependency tags, credentials, quotas, format availability, exact sample inventory, and the
+recorded 429. Additional API recording must honor its Retry-After or use an authorized key.
 
-- Implement real models, SDK, and recorded-fixture Swift Testing targets with shared strict settings.
-- Verify origin and credential handling, lazy pagination, cancellation, invalid continuation, source
-  receipts, historical/current records, XML portability, unknown values, and null preservation.
-- Add both DocC catalogs and real Swift Package Index documentation targets, models first.
-- Add a working demo; preserve Xcode 26 compatible project format 77 and generated package schemes.
-- Run the complete repository gate and planted-violation checks, Apple MCP builds/tests, Linux default
-  and HTTPPortable suites, Android, zero-warning DocC, and demo build/run.
-- Review and enable CI with the retained two-entry Apple matrix and pinned Android cold boot options.
-  Measure hosted timings before replacing provisional timeout ceilings. Configure documentation
-  publication only after real products pass validation.
+A successful current second package/granule page and modern live relationships remain unavailable;
+official published examples and explicit in-memory envelope mutations are labeled accordingly.
+BILLSTATUS and document samples do not establish every bill, vote, law, presidential action, or
+historical format. Bulk-directory enumeration and the combined NARA/GovInfo all-administration and
+early-Congress source inventory remain separate coordinated work. Neither SDK depends on the other.
 
-`bash Scripts/verify.sh --scaffold` cannot satisfy any source, transport, runtime, or publication gate.
+## Delivery boundaries
+
+The repository-check CI lane validates actual source and fixture receipts. Platform/documentation
+workflow definitions retain the two Apple entries, Android pins/cold-boot arguments, and provisional
+timeouts, but remain disabled pending outstanding qualification. No remote, push, hosted CI run,
+GitHub Pages deployment, tag, release object, or signed external consumer is established by these
+local checks. No sibling repository or shared plan is changed by this delivery.

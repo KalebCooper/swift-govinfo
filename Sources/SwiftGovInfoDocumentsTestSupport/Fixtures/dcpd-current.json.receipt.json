@@ -1,0 +1,29 @@
+{
+  "byteCount": 2003,
+  "file": "dcpd-current.json",
+  "headers": {
+    "Age": "0",
+    "Connection": "close",
+    "Content-Security-Policy": "default-src 'self'  http://www.govinfo.gov  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' http://www.govinfo.gov ; style-src 'unsafe-inline' 'self' http://www.govinfo.gov https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' http://www.govinfo.gov https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' http://www.govinfo.gov https://analytics.govinfo.gov; frame-src 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;",
+    "Content-Type": "application/json",
+    "Date": "Thu, 24 Sep 2026 01:47:07 GMT",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+    "X-Api-Umbrella-Request-Id": "d0q4c59eon47t807jrk0",
+    "X-Cache": "MISS",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Ratelimit-Limit": "10",
+    "X-Ratelimit-Remaining": "7",
+    "X-Vcap-Request-Id": "7fe4b0bd-75fe-4adf-7824-aa0a292fcf47",
+    "X-Xss-Protection": "1; mode=block"
+  },
+  "providerID": "DCPD-202600542",
+  "retrievedAt": "2026-09-24T01:47:08.010883+00:00",
+  "sha256": "455555fd6a1fa4493d787b46cd6e84f7e2757629683bfc83d76ceef2d4eab691",
+  "status": 200,
+  "url": "https://api.govinfo.gov/packages/DCPD-202600542/summary"
+}

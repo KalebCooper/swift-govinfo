@@ -1,0 +1,44 @@
+{
+    "dateIssued": "2009-01-21",
+    "documentType": "PRESDOC",
+    "subject": [{"level1": "Freedom of Information Act"}],
+    "packageId": "DCPD-200900009",
+    "collectionCode": "DCPD",
+    "detailsLink": "https://www.govinfo.gov/app/details/DCPD-200900009",
+    "title": "Memorandum on the Freedom of Information Act",
+    "branch": "executive",
+    "collectionName": "Compilation of Presidential Documents",
+    "download": {
+        "premisLink": "https://api.govinfo.gov/packages/DCPD-200900009/premis",
+        "txtLink": "https://api.govinfo.gov/packages/DCPD-200900009/htm",
+        "zipLink": "https://api.govinfo.gov/packages/DCPD-200900009/zip",
+        "modsLink": "https://api.govinfo.gov/packages/DCPD-200900009/mods",
+        "pdfLink": "https://api.govinfo.gov/packages/DCPD-200900009/pdf"
+    },
+    "pages": "2",
+    "governmentAuthor2": "Office of the Federal Register",
+    "relatedLink": "https://api.govinfo.gov/related/DCPD-200900009",
+    "governmentAuthor1": "National Archives and Records Administration",
+    "publisher": "Office of the Federal Register, National Archives and Records Administration",
+    "docClass": "PRESDOC",
+    "lastModified": "2026-04-12T21:40:04Z",
+    "category": "Budget and Presidential Materials",
+    "otherIdentifier": {
+        "parent-ils-system-id": "000599742",
+        "child-ils-system-id": "000599742"
+    },
+    "dcpdCategory": [{
+        "level1": "Communications to Federal Agencies",
+        "level2": "Freedom of Information Act, memorandum"
+    }],
+    "president": {
+        "names": [
+            {"authority-lnf": "Obama, Barack H."},
+            {"authority-fnf": "Barack H. Obama"},
+            {"authority-other": "Barack Obama"},
+            {"authority-other": "Barack Hussein Obama"}
+        ],
+        "id": "BHO",
+        "party": "D"
+    }
+}

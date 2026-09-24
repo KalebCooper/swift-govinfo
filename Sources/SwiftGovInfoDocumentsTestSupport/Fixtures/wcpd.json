@@ -1,0 +1,32 @@
+{
+    "dateIssued": "1993-01-11",
+    "issue": "1",
+    "documentType": "WCPD",
+    "packageId": "WCPD-1993-01-11",
+    "collectionCode": "WCPD",
+    "detailsLink": "https://www.govinfo.gov/app/details/WCPD-1993-01-11",
+    "title": "Weekly Compilation of Presidential Documents Volume 29, Issue 1 (January 11, 1993)",
+    "branch": "executive",
+    "collectionName": "Compilation of Presidential Documents",
+    "volume": "29",
+    "download": {
+        "premisLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/premis",
+        "zipLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/zip",
+        "modsLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/mods",
+        "pdfLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/pdf"
+    },
+    "pages": "33",
+    "governmentAuthor2": "Office of the Federal Register",
+    "relatedLink": "https://api.govinfo.gov/related/WCPD-1993-01-11",
+    "governmentAuthor1": "National Archives and Records Administration",
+    "publisher": "Office of the Federal Register, National Archives and Records Administration",
+    "suDocClassNumber": "AE 2.109:, GS 4.114:",
+    "docClass": "WCPD",
+    "lastModified": "2025-10-28T03:21:38Z",
+    "category": "Budget and Presidential Materials",
+    "otherIdentifier": {
+        "migrated-doc-id": "pd11ja93_txt",
+        "ils-system-id": "000599742"
+    },
+    "granulesLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/granules?offsetMark=*&pageSize=100"
+}

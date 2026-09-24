@@ -1,0 +1,32 @@
+{
+    "dateIssued": "1993-01-11",
+    "packageId": "WCPD-1993-01-11",
+    "packageLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/summary",
+    "collectionCode": "WCPD",
+    "detailsLink": "https://www.govinfo.gov/app/details/WCPD-1993-01-11/WCPD-1993-01-11-Pg1",
+    "title": "Statement by Press Secretary Fitzwater on Recognition of the Czech and Slovak Republics",
+    "collectionName": "Compilation of Presidential Documents",
+    "granuleClass": "PRESDOCU",
+    "granuleId": "WCPD-1993-01-11-Pg1",
+    "download": {
+        "premisLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/premis",
+        "txtLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/granules/WCPD-1993-01-11-Pg1/htm",
+        "zipLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/zip",
+        "modsLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/granules/WCPD-1993-01-11-Pg1/mods",
+        "pdfLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/granules/WCPD-1993-01-11-Pg1/pdf"
+    },
+    "relatedLink": "https://api.govinfo.gov/related/WCPD-1993-01-11-Pg1",
+    "docClass": "WCPD",
+    "lastModified": "2025-10-28T03:21:38Z",
+    "category": "Budget and Presidential Materials",
+    "granulesLink": "https://api.govinfo.gov/packages/WCPD-1993-01-11/granules?offsetMark=*&pageSize=100",
+    "president": {
+        "names": [
+            {"authority-lnf": "Bush, George H. W."},
+            {"authority-fnf": "George H. W. Bush"},
+            {"authority-other": "George Herbert Walker Bush"}
+        ],
+        "id": "GHWB",
+        "party": "R"
+    }
+}

@@ -1,0 +1,35 @@
+{
+        "relatedId": "BILLS-114hr34enr",
+        "relationships": [
+          {
+            "relationship": "Bill versions",
+            "collection": "BILLS",
+            "relationshipLink": "https://api.govinfo.gov/related/BILLS-114hr34enr/BILLS"
+          },
+          {
+            "relationship": "Bill History",
+            "collection": "HOB",
+            "relationshipLink": "https://api.govinfo.gov/related/BILLS-114hr34enr/HOB"
+          },
+          {
+            "relationship": "Congressional Reports",
+            "collection": "CRPT",
+            "relationshipLink": "https://api.govinfo.gov/related/BILLS-114hr34enr/CRPT"
+          },
+          {
+            "relationship": "Presidential Signing Statements and Remarks",
+            "collection": "CPD",
+            "relationshipLink": "https://api.govinfo.gov/related/BILLS-114hr34enr/CPD"
+          },
+          {
+            "relationship": "Public and Private Laws",
+            "collection": "PLAW",
+            "relationshipLink": "https://api.govinfo.gov/related/BILLS-114hr34enr/PLAW"
+          },
+          {
+            "relationship": "U.S. Code",
+            "collection": "USCODE",
+            "relationshipLink": "https://api.govinfo.gov/related/BILLS-114hr34enr/USCODE"
+          }
+        ]
+      }

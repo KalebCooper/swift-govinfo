@@ -1,0 +1,27 @@
+{
+  "byteCount": 3256897,
+  "file": "fr.pdf",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "CF-RAY": "a3fe1f833ca42d2d-DFW",
+    "Connection": "close",
+    "Content-Disposition": "inline; filename=\"FR-1936-03-14.pdf\"",
+    "Content-Length": "3256897",
+    "Content-Security-Policy": "default-src 'self'  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' *.videodelivery.net *.cloudflarestream.com  https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' ; style-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://api.data.gov  https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com  https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' https://cdn.jsdelivr.net  https://stackpath.bootstrapcdn.com https://api.data.gov https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' *.videodelivery.net *.cloudflarestream.com https://cdn.jsdelivr.net  https://api.data.gov https://analytics.govinfo.gov; frame-src 'self'  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;",
+    "Content-Type": "application/pdf",
+    "Date": "Thu, 24 Sep 2026 01:47:47 GMT",
+    "Last-Modified": "Mon, 22 Sep 2025 19:55:58 GMT",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Server": "cloudflare",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block",
+    "cf-cache-status": "DYNAMIC"
+  },
+  "providerID": null,
+  "retrievedAt": "2026-09-24T01:47:49.016626+00:00",
+  "sha256": "8d77ce0271b7919147b5c879bcd3fd637b0fc576a93cdf7ddf17b092f89cd415",
+  "status": 200,
+  "url": "https://www.govinfo.gov/content/pkg/FR-1936-03-14/pdf/FR-1936-03-14.pdf"
+}

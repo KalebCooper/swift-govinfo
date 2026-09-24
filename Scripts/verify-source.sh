@@ -29,6 +29,17 @@ FAILURES=0
 pass() { printf '[PASS] %s\n' "$1"; }
 fail() { printf '[FAIL] %s\n' "$1"; FAILURES=$((FAILURES + 1)); }
 
+# Raw official recordings keep their source wording; authored prose and Swift remain checked.
+# The exception is restricted to the recorded-body directory and documented media extensions.
+authored_files() {
+  find "$ROOT/Sources" "$ROOT/Tests" "$ROOT/Scripts" "$ROOT/.github" -type f 2>/dev/null |
+    grep -vE '/Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/[^/]+\.(json|xml|html|pdf)$'
+  for file in Package.swift .spi.yml README.md CHANGELOG.md CONTRIBUTING.md; do
+    [ ! -f "$ROOT/$file" ] || printf '%s\n' "$ROOT/$file"
+  done
+}
+
+
 # Lines of Swift source with comment-only lines removed, so a doc comment may name a banned
 # construct while explaining why it is banned.
 code_lines() {
@@ -129,18 +140,12 @@ check_coordinates() {
   if [ -z "$hits" ]; then pass "$name"; else fail "$name"; printf '%s\n' "$hits"; fi
 }
 
-# Prohibition. No em dashes anywhere written here. A recorded response body is the provider's words
-# rather than this repository's, so the scan skips `.json`, the format every recording is saved in.
-# The exclusion is by extension rather than by the Fixtures directory because prose this repository
-# does write lives there too, such as a README naming what each recording holds, and excluding the
-# directory would drop it from the scan with nothing to say so. A recording saved in some other
-# format, and this service offers application/cap+xml, trips the check on the day it is added and
-# joins the exclusion then, which is the loud failure rather than the silent one.
+
 check_em_dash() {
   local name="no em dash in Sources, Tests, Scripts, .github, Package.swift, .spi.yml, README, CHANGELOG, CONTRIBUTING, recordings aside"
   local hits dash
   dash=$(printf '\342\200\224')
-  hits=$(grep -rnH --exclude='*.json' -- "$dash" "$ROOT/Sources" "$ROOT/Tests" "$ROOT/Scripts" "$ROOT/.github" "$ROOT/Package.swift" "$ROOT/.spi.yml" "$ROOT/README.md" "$ROOT/CHANGELOG.md" "$ROOT/CONTRIBUTING.md" 2>/dev/null || true)
+  hits=$(authored_files | while IFS= read -r file; do grep -nH -- "$dash" "$file" 2>/dev/null || true; done)
   if [ -z "$hits" ]; then pass "$name"; else fail "$name"; printf '%s\n' "$hits"; fi
 }
 
@@ -152,7 +157,7 @@ check_em_dash() {
 check_test_jargon() {
   local name="no test double, driver, or seam jargon in Sources, Tests, .github, README, CHANGELOG, CONTRIBUTING, recordings aside"
   local hits
-  hits=$(grep -rnHwiE --exclude='*.json' "test doubles?|doubles|(the|a|second|no) double|the driver|the seam|a seam|seams" "$ROOT/Sources" "$ROOT/Tests" "$ROOT/.github" "$ROOT/README.md" "$ROOT/CHANGELOG.md" "$ROOT/CONTRIBUTING.md" 2>/dev/null || true)
+  hits=$(authored_files | grep -vE '/Scripts/|/Package.swift$|/\.spi.yml$' | while IFS= read -r file; do grep -nHwiE "test doubles?|doubles|(the|a|second|no) double|the driver|the seam|a seam|seams" "$file" 2>/dev/null || true; done)
   if [ -z "$hits" ]; then pass "$name"; else fail "$name"; printf '%s\n' "$hits"; fi
 }
 
@@ -423,6 +428,10 @@ jobs:
       - uses: actions/checkout@v7
 EOF
   printf '# Readme\n' > "$d/README.md"
+  mkdir -p "$d/Sources/SwiftGovInfoDocumentsTestSupport/Fixtures"
+  for format in xml html; do
+    printf 'Official words \\342\\200\\224 seams\n' > "$d/Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/official.$format"
+  done
   printf '# Changelog\n' > "$d/CHANGELOG.md"
   printf '# Contributing\n' > "$d/CONTRIBUTING.md"
   printf 'version: 1\n' > "$d/.spi.yml"
@@ -509,6 +518,10 @@ plant_third_violation() {
   # $1: directory, $2: check function; returns 1 when the check has fewer than three shapes
   local d="$1"
   case "$2" in
+    check_em_dash)
+      printf '/// Authored \342\200\224 text\n' > "$d/Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/authored.swift" ;;
+    check_test_jargon)
+      printf '/// Authored test double\n' > "$d/Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/authored.swift" ;;
     # Importing one declaration is still importing the module.
     check_models_import_boundary)
       printf 'import struct HTTPCore.Request\n' > "$d/Sources/SwiftGovInfoDocumentsModels/Leak.swift" ;;
@@ -528,6 +541,10 @@ plant_fourth_violation() {
   # $1: directory, $2: check function; returns 1 when the check has fewer than four shapes
   local d="$1"
   case "$2" in
+    check_em_dash)
+      printf 'Authored \342\200\224 text\n' > "$d/Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/authored.md" ;;
+    check_test_jargon)
+      printf 'Authored test double\n' > "$d/Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/authored.md" ;;
     # URLSession is Foundation's, so no import names it; the use itself is the violation.
     check_models_import_boundary)
       printf 'let session = URLSession.shared\n' >> "$d/Sources/SwiftGovInfoDocumentsModels/MediaType.swift" ;;
@@ -543,6 +560,10 @@ plant_fifth_violation() {
   # $1: directory, $2: check function; returns 1 when the check has fewer than five shapes
   local d="$1"
   case "$2" in
+    check_em_dash)
+      printf '<authored> \342\200\224 text\n' > "$d/Sources/SwiftGovInfoDocumentsModels/authored.xml" ;;
+    check_test_jargon)
+      printf '<authored> test double\n' > "$d/Sources/SwiftGovInfoDocumentsModels/authored.xml" ;;
     # The SDK depends on the models, so the models importing the SDK closes a cycle.
     check_models_import_boundary)
       printf 'import SwiftGovInfoDocuments\n' > "$d/Sources/SwiftGovInfoDocumentsModels/Leak.swift" ;;

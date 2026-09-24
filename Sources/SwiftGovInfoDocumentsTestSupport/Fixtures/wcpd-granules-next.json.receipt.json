@@ -1,0 +1,25 @@
+{
+  "byteCount": 167,
+  "file": "wcpd-granules-next.json",
+  "headers": {
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Content-Type": "application/json",
+    "Date": "Thu, 24 Sep 2026 01:47:12 GMT",
+    "Retry-After": "79968",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Transfer-Encoding": "chunked",
+    "X-Api-Umbrella-Request-Id": "d0q4c6c9356pcbvr7i10",
+    "X-Cache": "MISS",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "X-Ratelimit-Limit": "10",
+    "X-Ratelimit-Remaining": "0",
+    "X-Vcap-Request-Id": "1f03d15b-3e53-497e-7e61-596ca211498a"
+  },
+  "providerID": "WCPD-1993-01-11",
+  "retrievedAt": "2026-09-24T01:47:12.317307+00:00",
+  "sha256": "16d704c70afe8ff224ea0050b2a2df0b07a83880f62c2eaebd7d168b57f88a19",
+  "status": 429,
+  "url": "https://api.govinfo.gov/packages/WCPD-1993-01-11/granules?offsetMark=AoM1MDI5LzAwMS8wMDAwMDEvMDAwMDAyIjAxPwZXQ1BELTE5OTMtMDEtMTEvV0NQRC0xOTkzLTAxLTExLVBnMS0y&pageSize=2"
+}

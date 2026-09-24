@@ -1,0 +1,120 @@
+<mods xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" version="3.3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd" ID="P0b002ee1802f9ced">
+    <name type="corporate">
+         <namePart>United States Government Publishing Office</namePart>
+         <role>
+              <roleTerm authority="marcrelator" type="text">publisher</roleTerm>
+              <roleTerm authority="marcrelator" type="code">pbl</roleTerm>
+        </role>
+         <role>
+              <roleTerm authority="marcrelator" type="text">distributor</roleTerm>
+              <roleTerm authority="marcrelator" type="code">dst</roleTerm>
+        </role>
+    </name>
+    <name type="corporate">
+         <namePart>United States</namePart>
+         <namePart>National Archives and Records Administration</namePart>
+         <namePart>Office of the Federal Register</namePart>
+         <role>
+              <roleTerm authority="marcrelator" type="text">author</roleTerm>
+              <roleTerm authority="marcrelator" type="code">aut</roleTerm>
+        </role>
+         <description>Government Organization</description>
+    </name>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">government publication</genre>
+    <language>
+         <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+    </language>
+    <extension>
+         <collectionCode>DCPD</collectionCode>
+         <category>Budget and Presidential Materials</category>
+         <branch>executive</branch>
+         <dateIngested>2010-08-05</dateIngested>
+    </extension>
+    <name type="corporate">
+         <namePart>United States</namePart>
+         <namePart>Executive Office of the President</namePart>
+         <role>
+              <roleTerm authority="marcrelator" type="text">originator</roleTerm>
+              <roleTerm authority="marcrelator" type="code">org</roleTerm>
+        </role>
+         <description>United States Government Agency</description>
+    </name>
+    <name type="personal">
+         <namePart>Barack H. Obama</namePart>
+         <role>
+              <roleTerm authority="marcrelator" type="text">originator</roleTerm>
+              <roleTerm authority="marcrelator" type="code">org</roleTerm>
+        </role>
+         <description>President of the United States</description>
+    </name>
+    <titleInfo>
+         <title>Memorandum on the Freedom of Information Act</title>
+    </titleInfo>
+    <location>
+         <url displayLabel="Content Detail" access="object in context">https://www.govinfo.gov/app/details/DCPD-200900009</url>
+         <url displayLabel="HTML rendition" access="raw object">https://www.govinfo.gov/content/pkg/DCPD-200900009/html/DCPD-200900009.htm</url>
+         <url displayLabel="PDF rendition" access="raw object">https://www.govinfo.gov/content/pkg/DCPD-200900009/pdf/DCPD-200900009.pdf</url>
+    </location>
+    <identifier type="preferred citation">DCPD-200900009</identifier>
+    <subject>
+         <topic>Freedom of Information Act</topic>
+    </subject>
+    <extension>
+         <searchTitle>Memorandum on the Freedom of Information Act;DCPD-200900009</searchTitle>
+    </extension>
+    <originInfo>
+         <publisher>Office of the Federal Register, National Archives and Records Administration</publisher>
+         <dateIssued encoding="w3cdtf">2009-01-21</dateIssued>
+         <issuance>continuing</issuance>
+         <frequency authority="marcfrequency">daily</frequency>
+    </originInfo>
+    <physicalDescription>
+         <note type="source content type">deposited</note>
+         <digitalOrigin>born digital</digitalOrigin>
+         <extent>2 digital object pages</extent>
+    </physicalDescription>
+    <identifier type="uri">https://www.govinfo.gov/app/details/DCPD-200900009</identifier>
+    <identifier type="local">P0b002ee1802f9ced</identifier>
+    <identifier type="ILS system id">000599742</identifier>
+    <identifier type="Child ILS system id">000599742</identifier>
+    <recordInfo>
+         <recordContentSource authority="marcorg">DGPO</recordContentSource>
+         <recordCreationDate encoding="w3cdtf">2010-08-05</recordCreationDate>
+         <recordChangeDate encoding="w3cdtf">2026-04-12</recordChangeDate>
+         <recordIdentifier source="DGPO">DCPD-200900009</recordIdentifier>
+         <recordOrigin>machine generated</recordOrigin>
+         <languageOfCataloging>
+              <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+    <accessCondition type="GPO scope determination">fdlp</accessCondition>
+    <extension>
+         <docClass>PRESDOC</docClass>
+         <dcpdCategory>
+                                
+              <level1>Communications to Federal Agencies</level1>
+                                
+              <level2>Freedom of Information Act, memorandum</level2>
+                            
+        </dcpdCategory>
+         <subject>
+                                
+              <level1>Freedom of Information Act</level1>
+                            
+        </subject>
+         <accessId>DCPD-200900009</accessId>
+         <president id="BHO" number="44" party="D" yearsInOffice="2009-2017">
+                                
+              <name type="authority-lnf">Obama, Barack H.</name>
+                                
+              <name type="authority-fnf">Barack H. Obama</name>
+                                
+              <name type="authority-other">Barack Obama</name>
+                                
+              <name type="authority-other">Barack Hussein Obama</name>
+                            
+        </president>
+         <presidentialDoc type="PRMEMO"></presidentialDoc>
+    </extension>
+</mods>

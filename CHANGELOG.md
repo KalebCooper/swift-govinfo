@@ -1,12 +1,20 @@
 # Changelog
 
-All notable changes are documented here, following [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
-and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
 ## Unreleased
 
 ### Added
 
-- Repository infrastructure, manifest foundation, scaffold verification, and disabled source CI templates.
+- Independent SwiftGovInfoDocumentsModels and SwiftGovInfoDocuments products, using public
+  swifty-networking 1.3.1 and optional HTTPPortable transport support.
+- Package and granule detail, collection discovery, modified/published package listings, related
+  records, and advertised content/metadata representations through three typed API levels.
+- Independent lazy package/granule pages and items, validated opaque continuation, cancellation,
+  typed errors, explicit credentials, bounded receipts, and streamed SHA-256 downloads.
+- Pure bounded BILLSTATUS and source XML decoding that retains the source tree and bill identity.
+- Attributed current/historical fixtures, deterministic tests, models-first DocC, and an iOS demo.
+- Source and receipt verification with planted violations, plus a non-overwriting opt-in recorder.
 
-No public API is implemented or released.
+### Changed
+
+- The default repository gate now validates implemented source and recorded evidence instead of
+  scaffold infrastructure. Platform and hosted delivery limitations remain explicitly documented.

@@ -1,0 +1,29 @@
+{
+  "byteCount": 4804,
+  "file": "collections.json",
+  "headers": {
+    "Age": "2",
+    "Connection": "close",
+    "Content-Length": "4804",
+    "Content-Security-Policy": "default-src 'self'  http://www.govinfo.gov  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' http://www.govinfo.gov ; style-src 'unsafe-inline' 'self' http://www.govinfo.gov https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' http://www.govinfo.gov https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' http://www.govinfo.gov https://analytics.govinfo.gov; frame-src 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;",
+    "Content-Type": "application/json",
+    "Date": "Thu, 24 Sep 2026 01:47:07 GMT",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Vary": "Accept-Encoding",
+    "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+    "X-Api-Umbrella-Request-Id": "d0q4c4m219njn3l91ku0",
+    "X-Cache": "MISS",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Ratelimit-Limit": "10",
+    "X-Ratelimit-Remaining": "8",
+    "X-Vcap-Request-Id": "4c655e96-8148-4287-5c66-facb015a707f",
+    "X-Xss-Protection": "1; mode=block"
+  },
+  "providerID": null,
+  "retrievedAt": "2026-09-24T01:47:07.600980+00:00",
+  "sha256": "3cd9d0590f087d8b95eb93c3983ca08b9206c85418a64f01ec13587d945a576b",
+  "status": 200,
+  "url": "https://api.govinfo.gov/collections"
+}

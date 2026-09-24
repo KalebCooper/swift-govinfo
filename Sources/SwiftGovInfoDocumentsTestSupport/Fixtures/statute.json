@@ -1,0 +1,31 @@
+{
+    "dateIssued": "1845-03-03",
+    "documentType": "STATUTE",
+    "congress": "28",
+    "session": "2",
+    "packageId": "STATUTE-1",
+    "collectionCode": "STATUTE",
+    "detailsLink": "https://www.govinfo.gov/app/details/STATUTE-1",
+    "title": "United States Statutes at Large, Volume 1, 28th Congress, 2nd Session",
+    "branch": "legislative",
+    "collectionName": "United States Statutes at Large",
+    "volume": "1",
+    "download": {
+        "premisLink": "https://api.govinfo.gov/packages/STATUTE-1/premis",
+        "zipLink": "https://api.govinfo.gov/packages/STATUTE-1/zip",
+        "modsLink": "https://api.govinfo.gov/packages/STATUTE-1/mods",
+        "pdfLink": "https://api.govinfo.gov/packages/STATUTE-1/pdf",
+        "uslmLink": "https://api.govinfo.gov/packages/STATUTE-1/uslm"
+    },
+    "pages": "828",
+    "governmentAuthor2": "Office of the Federal Register",
+    "relatedLink": "https://api.govinfo.gov/related/STATUTE-1",
+    "governmentAuthor1": "National Archives and Records Administration",
+    "publisher": "U.S. Government Printing Office",
+    "suDocClassNumber": "AE 2.111:",
+    "docClass": "STATUTE",
+    "lastModified": "2026-04-09T19:35:55Z",
+    "category": "Bills and Statutes",
+    "otherIdentifier": {"migrated-doc-id": "STATUTE-1.pdf"},
+    "granulesLink": "https://api.govinfo.gov/packages/STATUTE-1/granules?offsetMark=*&pageSize=100"
+}

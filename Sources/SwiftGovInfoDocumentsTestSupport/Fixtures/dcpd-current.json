@@ -1,0 +1,48 @@
+{
+    "dateIssued": "2026-08-14",
+    "documentType": "PRESDOC",
+    "subject": [
+        {"level1": "Japan, defense relationship with U.S."},
+        {"level1": "U.S. servicemembers, service and dedication"},
+        {"level1": "World War II, anniversary of allied victory"}
+    ],
+    "packageId": "DCPD-202600542",
+    "collectionCode": "DCPD",
+    "detailsLink": "https://www.govinfo.gov/app/details/DCPD-202600542",
+    "title": "Message on the Anniversary of the Allied Victory in World War II",
+    "branch": "executive",
+    "collectionName": "Compilation of Presidential Documents",
+    "download": {
+        "premisLink": "https://api.govinfo.gov/packages/DCPD-202600542/premis",
+        "txtLink": "https://api.govinfo.gov/packages/DCPD-202600542/htm",
+        "zipLink": "https://api.govinfo.gov/packages/DCPD-202600542/zip",
+        "modsLink": "https://api.govinfo.gov/packages/DCPD-202600542/mods",
+        "pdfLink": "https://api.govinfo.gov/packages/DCPD-202600542/pdf"
+    },
+    "pages": "1",
+    "governmentAuthor2": "Office of the Federal Register",
+    "relatedLink": "https://api.govinfo.gov/related/DCPD-202600542",
+    "governmentAuthor1": "National Archives and Records Administration",
+    "publisher": "Office of the Federal Register, National Archives and Records Administration",
+    "docClass": "PRESDOC",
+    "lastModified": "2026-09-22T22:20:15Z",
+    "category": "Budget and Presidential Materials",
+    "otherIdentifier": {
+        "parent-ils-system-id": "000599742",
+        "child-ils-system-id": "000599742"
+    },
+    "dcpdCategory": [{
+        "level1": "Letters and Messages",
+        "level2": "Allied victory in World War II, message on anniversary"
+    }],
+    "president": {
+        "names": [
+            {"authority-lnf": "Trump, Donald J."},
+            {"authority-fnf": "Donald J. Trump"},
+            {"authority-other": "Donald Trump"},
+            {"authority-other": "Donald John Trump"}
+        ],
+        "id": "DJT",
+        "party": "R"
+    }
+}

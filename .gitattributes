@@ -1,0 +1,6 @@
+# Official recordings retain exact bytes, including source whitespace and line endings.
+Examples/SwiftGovInfoDocumentsDemo/SwiftGovInfoDocumentsDemo/ppp-book.json* -text -whitespace
+Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/*.html -text -whitespace
+Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/*.json -text -whitespace
+Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/*.pdf -text -whitespace
+Sources/SwiftGovInfoDocumentsTestSupport/Fixtures/*.xml -text -whitespace

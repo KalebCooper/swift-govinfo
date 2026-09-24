@@ -1,0 +1,29 @@
+{
+  "byteCount": 88,
+  "file": "ppp-granules.json",
+  "headers": {
+    "Age": "1",
+    "Connection": "close",
+    "Content-Length": "88",
+    "Content-Security-Policy": "default-src 'self'  http://www.govinfo.gov  https://analytics.govinfo.gov https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com; frame-ancestors 'self'; script-src 'unsafe-inline' 'unsafe-eval' 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; object-src 'unsafe-inline' 'self' http://www.govinfo.gov ; style-src 'unsafe-inline' 'self' http://www.govinfo.gov https://maxcdn.bootstrapcdn.com https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha; img-src 'unsafe-inline' 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://analytics.govinfo.gov data:; font-src 'unsafe-inline' 'self' http://www.govinfo.gov https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' http://www.govinfo.gov https://analytics.govinfo.gov; frame-src 'self' http://www.govinfo.gov  https://stackpath.bootstrapcdn.com https://maxcdn.bootstrapcdn.com https://www.google.com/recaptcha https://recaptcha.google.com/recaptcha;",
+    "Content-Type": "application/json",
+    "Date": "Thu, 24 Sep 2026 01:47:10 GMT",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Vary": "Accept-Encoding",
+    "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+    "X-Api-Umbrella-Request-Id": "d0q4c5pvtc5gmvm036p0",
+    "X-Cache": "MISS",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Ratelimit-Limit": "10",
+    "X-Ratelimit-Remaining": "3",
+    "X-Vcap-Request-Id": "c29ffcf2-965d-45da-4522-a45fce62cbbc",
+    "X-Xss-Protection": "1; mode=block"
+  },
+  "providerID": "PPP-1929-book1",
+  "retrievedAt": "2026-09-24T01:47:10.111196+00:00",
+  "sha256": "6e13ad5ac6ec90067208c6bb0c9e5a194bfa0db4f6192806c23f26bac051ae70",
+  "status": 200,
+  "url": "https://api.govinfo.gov/packages/PPP-1929-book1/granules?offsetMark=*&pageSize=2"
+}
