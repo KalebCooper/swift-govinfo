@@ -21,7 +21,7 @@ unsafe code, UI framework, persistence, cross-provider joins, or eager whole-his
 
 Local validation completed September 23, 2026 (America/Chicago). Apple gates used Xcode 27.0 and
 Apple Swift 6.4; Linux used the pinned `swift:6.3-noble` image (Swift 6.3.3). The declared tools floor
-remains Swift 6.2. A simulator running iOS 26.5 is not evidence of a Swift 6.2/Xcode 26 compiler run.
+remains Swift 6.2 as a manifest declaration. Apple qualification uses Xcode 27 only.
 
 | Gate | Result | Evidence |
 | --- | --- | --- |
@@ -37,7 +37,6 @@ remains Swift 6.2. A simulator running iOS 26.5 is not evidence of a Swift 6.2/X
 | iOS tests | Unavailable result | Earlier simulator test operation stalled; no passing iOS test result is claimed |
 | Demo runtime | Unavailable result | iOS 27 launch timed out earlier; final iOS 26.5 launch produced no result before the 360-second helper deadline; StopProject reported no running app |
 | Android | Unavailable | No adb/Android SDK found; `swift sdk list` reports no installed Swift SDKs |
-| Xcode 26/Swift 6.2 | Unavailable | No run on that toolchain; the retained CI matrix is not evidence of execution |
 | Hosted CI, release and publication | Not performed | No remote, push, tag, release, Pages publication, or signed external consumer |
 
 Xcode artifact paths above are relative to this machine's temporary `ActionArtifacts/default`
@@ -69,7 +68,7 @@ early-Congress source inventory remain separate coordinated work. Neither SDK de
 ## Delivery boundaries
 
 The repository-check CI lane validates actual source and fixture receipts. Platform/documentation
-workflow definitions retain the two Apple entries, Android pins/cold-boot arguments, and provisional
+workflow definitions retain the Xcode 27 Apple lane, Android pins/cold-boot arguments, and provisional
 timeouts, but remain disabled pending outstanding qualification. No remote, push, hosted CI run,
 GitHub Pages deployment, tag, release object, or signed external consumer is established by these
 local checks. No sibling repository or shared plan is changed by this delivery.

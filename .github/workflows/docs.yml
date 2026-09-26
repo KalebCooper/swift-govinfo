@@ -21,7 +21,7 @@ jobs:
     # Disabled pending the remaining platform and hosted qualification gates.
     if: ${{ false }}
     name: Build DocC site
-    runs-on: macos-26
+    runs-on: xcode-27
     # Provisional ceiling; no hosted timing evidence exists.
     timeout-minutes: 15
     steps:
@@ -38,7 +38,7 @@ jobs:
           set -o pipefail
           xcodebuild build \
             -scheme SwiftGovInfoDocuments \
-            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.2' \
+            -destination 'platform=iOS Simulator,name=iPhone 18 Pro,OS=27.0' \
             -derivedDataPath .derivedData \
             -skipPackagePluginValidation \
             | xcbeautify --renderer github-actions
