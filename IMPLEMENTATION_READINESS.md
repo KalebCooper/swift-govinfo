@@ -37,14 +37,15 @@ remains Swift 6.2 as a manifest declaration. Apple qualification uses Xcode 27 o
 | iOS tests | Unavailable result | Earlier simulator test operation stalled; no passing iOS test result is claimed |
 | Demo runtime | Unavailable result | iOS 27 launch timed out earlier; final iOS 26.5 launch produced no result before the 360-second helper deadline; StopProject reported no running app |
 | Android | Unavailable | No adb/Android SDK found; `swift sdk list` reports no installed Swift SDKs |
-| Hosted CI | Failed; fix validated locally | September 26 run `36247309249` at `6eeb618` passed source/format checks, then failed because the Swift container lacked `python3`; hosted rerun pending |
+| Hosted repository CI | Pass | September 26 [run `36247936512`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36247936512) at `b640cc8` passed dependency installation, source/format/receipt checks and checker self-tests; platform and documentation lanes remain disabled |
 | Release and publication | Not performed | No tag, release, Pages publication, or signed external consumer |
 
 On September 26, the repository CI job was updated to install Python before verification. Both
 `bash Scripts/verify.sh` and `bash Scripts/verify.sh --self-test` passed locally on macOS and in a
 disposable ARM64 `swift:6.3-noble` container after the same installation step. Verification covered
 20 attributed bodies, 51 source-check arms, and seven planted receipt violations. This container
-validation does not establish a passing hosted AMD64 run.
+validation was followed by the passing hosted AMD64 run recorded above. The preceding run
+`36247309249` at `6eeb618` failed because the Swift container lacked `python3`.
 
 Xcode artifact paths above are relative to this machine's temporary `ActionArtifacts/default`
 directory. `.build` logs and generated documentation are local artifacts, not committed products.
@@ -77,6 +78,7 @@ early-Congress source inventory remain separate coordinated work. Neither SDK de
 The repository-check CI lane validates actual source and fixture receipts. Platform/documentation
 workflow definitions retain the Xcode 27 Apple lane, Android pins/cold-boot arguments, and provisional
 timeouts, but remain disabled pending outstanding qualification. The repository is hosted at
-`KalebCooper/swift-govinfo`; its latest CI failure and locally validated fix are recorded above.
-A passing hosted rerun, GitHub Pages deployment, tag, release object, and signed external consumer
-remain unverified. No sibling repository or shared plan is changed by this delivery.
+`KalebCooper/swift-govinfo`; its repository-check lane has passed on the hosted runner. Hosted
+platform tests and documentation remain unqualified. GitHub Pages deployment, a tag, a release
+object, and a signed external consumer remain unverified. No sibling repository or shared plan
+is changed by this delivery.
