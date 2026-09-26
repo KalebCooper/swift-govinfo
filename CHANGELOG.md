@@ -18,3 +18,7 @@
 
 - The default repository gate now validates implemented source and recorded evidence instead of
   scaffold infrastructure. Platform and hosted delivery limitations remain explicitly documented.
+
+### Fixed
+
+- Link system zlib on Android so FoundationXML can load when decoding document XML.

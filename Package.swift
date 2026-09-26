@@ -58,7 +58,12 @@ let package = Package(
       ],
       swiftSettings: swiftSettings
     ),
-    .target(name: "SwiftGovInfoDocumentsModels", swiftSettings: swiftSettings),
+    .target(
+      name: "SwiftGovInfoDocumentsModels",
+      swiftSettings: swiftSettings,
+      // FoundationXML in the Android SDK omits its dependency on system zlib.
+      linkerSettings: [.linkedLibrary("z", .when(platforms: [.android]))]
+    ),
     // Support shared by the test targets: responses recorded from the live API, and the suite time
     // limit. It is in no product, so nothing here reaches a consumer.
     .target(
