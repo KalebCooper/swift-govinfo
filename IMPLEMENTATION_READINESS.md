@@ -34,10 +34,11 @@ remains Swift 6.2 as a manifest declaration. Apple qualification uses Xcode 27 o
 | DocC | Pass | 224 models and 111 SDK symbols; both catalogs converted with warnings as errors, merged and transformed for static hosting; `.build/docc-final`, zero diagnostics |
 | iOS demo build through Xcode MCP | Pass | iPhone 17 Pro (26.5); `BuildProject/BuildProject-Log-20260923-215424.txt` |
 | Demo source/project | Pass | Strict Swift formatting, plist validation, target floor 26.0/Swift 6, local package references, format 77, copied fixture/receipt identical to canonical evidence |
-| iOS tests | Unavailable result | Earlier simulator test operation stalled; no passing iOS test result is claimed |
+| iOS tests | Pass | September 26 hosted iOS 27.0 simulator tests passed in [CI run `36249199445`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199445); local Xcode MCP also passed 42 cases with zero failures/skips |
 | Demo runtime | Unavailable result | iOS 27 launch timed out earlier; final iOS 26.5 launch produced no result before the 360-second helper deadline; StopProject reported no running app |
-| Android | Unavailable | No adb/Android SDK found; `swift sdk list` reports no installed Swift SDKs |
-| Hosted repository CI | Pass | September 26 [run `36247936512`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36247936512) at `b640cc8` passed dependency installation, source/format/receipt checks and checker self-tests; platform and documentation lanes remain disabled |
+| Android | Pass | Swift 6.3.3, HTTPPortable, cold-booted x86_64 emulator; 36 test functions in nine suites passed in [CI run `36249199445`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199445) |
+| Hosted CI | Pass | September 26 [run `36249199445`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199445) at `86575f9`: all five jobs ran and passed, including both Linux trait configurations, iOS tests, Release demo build, Android tests, lint and repository checks |
+| Hosted documentation build | Pass | [Docs run `36249199420`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199420) at `86575f9`: both catalogs converted with warnings as errors, merged, transformed and uploaded; deployment remains disabled |
 | Release and publication | Not performed | No tag, release, Pages publication, or signed external consumer |
 
 On September 26, the repository CI job was updated to install Python before verification. Both
@@ -46,6 +47,13 @@ disposable ARM64 `swift:6.3-noble` container after the same installation step. V
 20 attributed bodies, 51 source-check arms, and seven planted receipt violations. This container
 validation was followed by the passing hosted AMD64 run recorded above. The preceding run
 `36247309249` at `6eeb618` failed because the Swift container lacked `python3`.
+
+All platform, lint and documentation build jobs now run on pushes to main and pull requests. The
+first enabled Android run compiled successfully but could not launch because FoundationXML in the
+Swift 6.3.3 Android SDK omitted its system zlib dependency. The models target now links zlib only on
+Android; the full recorded XML and SDK suites passed on the emulator after this change. The
+portable lockfile, Android toolchain/action pins, cold-boot settings and strict Swift settings are
+preserved. Pages deployment is separate from documentation build verification and remains disabled.
 
 Xcode artifact paths above are relative to this machine's temporary `ActionArtifacts/default`
 directory. `.build` logs and generated documentation are local artifacts, not committed products.
@@ -76,9 +84,8 @@ early-Congress source inventory remain separate coordinated work. Neither SDK de
 ## Delivery boundaries
 
 The repository-check CI lane validates actual source and fixture receipts. Platform/documentation
-workflow definitions retain the Xcode 27 Apple lane, Android pins/cold-boot arguments, and provisional
-timeouts, but remain disabled pending outstanding qualification. The repository is hosted at
-`KalebCooper/swift-govinfo`; its repository-check lane has passed on the hosted runner. Hosted
-platform tests and documentation remain unqualified. GitHub Pages deployment, a tag, a release
-object, and a signed external consumer remain unverified. No sibling repository or shared plan
-is changed by this delivery.
+workflows retain the Xcode 27 Apple lane, Android pins/cold-boot arguments and bounded timeouts.
+All five CI jobs and the documentation build have passed on hosted runners for
+`KalebCooper/swift-govinfo`. GitHub Pages deployment, a tag, a release object, demo runtime and a
+signed external consumer remain unverified. No sibling repository or shared plan is changed by
+this delivery.
