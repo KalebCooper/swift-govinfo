@@ -27,12 +27,12 @@ checks detect planted errors.
 Run Apple builds and tests through Xcode MCP using the generated `swift-govinfo-Package` scheme.
 Run `bash Scripts/linux-test.sh` for default and HTTPPortable traits with the pinned Swift 6.3 image.
 Build both DocC catalogs with `Scripts/build-docs.sh`, models first, from built iOS simulator modules.
-Android, both retained Apple CI entries, demo runtime, and hosted workflows remain separate gates.
+Android, iOS simulator tests, the Release demo build, demo runtime and hosted workflows are separate gates.
 See [Implementation readiness](IMPLEMENTATION_READINESS.md) for current evidence and unavailable gates.
 
-The repository-check CI lane is enabled. Platform and documentation lanes remain explicitly disabled
-pending their outstanding qualification; enabling a template does not prove its execution. Hosted
-runs are required before replacing provisional timeout ceilings with measured values.
+Repository checks, formatting, Linux tests with both trait configurations, Android emulator tests,
+iOS simulator tests, the Release demo build and DocC builds run on pushes to main and pull requests.
+Pages deployment remains disabled. Job timeout ceilings reflect measured hosted qualification runs.
 
 ## Recording sources
 

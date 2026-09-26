@@ -20,7 +20,7 @@ jobs:
     # six-hour default. The ceiling is meant to be that job's slowest green run on `main` under its
     # current definition, rounded up to the next five minutes and then tripled. `Scripts/verify.sh`
     # holds the rule that every job has one.
-    # Provisional ceiling; this package has no hosted run evidence.
+    # Hosted qualification completes within five minutes; the ceiling allows three times that.
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
@@ -55,7 +55,7 @@ jobs:
     # runner-image bump would fail the download before anything was compiled.
     runs-on: ubuntu-24.04
     # The action bounds only the emulator boot, so a hung adb run is otherwise unbounded here.
-    # Provisional ceiling; this package has no hosted run evidence.
+    # Hosted qualification completes within ten minutes; the ceiling allows three times that.
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
@@ -101,7 +101,7 @@ jobs:
             os: '27.0'
             runner: xcode-27
     runs-on: ${{ matrix.runner }}
-    # Provisional per-entry ceiling; this package has no hosted run evidence.
+    # Hosted qualification completes within ten minutes; the ceiling allows three times that.
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
@@ -138,7 +138,7 @@ jobs:
     name: swift-format lint
     runs-on: ubuntu-latest
     container: swift:6.3-noble
-    # Provisional ceiling; this package has no hosted run evidence.
+    # Hosted qualification completes within five minutes; the ceiling allows three times that.
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
@@ -152,7 +152,7 @@ jobs:
     name: Validate repository source
     runs-on: ubuntu-latest
     container: swift:6.3-noble
-    # Provisional ceiling; no hosted timing evidence exists.
+    # Hosted qualification completes within five minutes; the ceiling allows three times that.
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7

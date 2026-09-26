@@ -7,8 +7,8 @@ Portable Swift access to official GovInfo documents, metadata, and BILLSTATUS XM
 ## Status
 
 The models and SDK implement collection discovery, package/granule metadata and lazy listings,
-relationships, advertised representations, required BILLSTATUS XML, and source receipts. Local
-qualification and unavailable external gates are recorded in [Implementation readiness](IMPLEMENTATION_READINESS.md).
+relationships, advertised representations, required BILLSTATUS XML, and source receipts. Local and
+hosted qualification and outstanding external gates are recorded in [Implementation readiness](IMPLEMENTATION_READINESS.md).
 
 ### Historical scope
 
