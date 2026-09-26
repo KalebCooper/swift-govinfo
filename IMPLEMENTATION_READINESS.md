@@ -38,8 +38,9 @@ remains Swift 6.2 as a manifest declaration. Apple qualification uses Xcode 27 o
 | Demo runtime | Unavailable result | iOS 27 launch timed out earlier; final iOS 26.5 launch produced no result before the 360-second helper deadline; StopProject reported no running app |
 | Android | Pass | Swift 6.3.3, HTTPPortable, cold-booted x86_64 emulator; 36 test functions in nine suites passed in [CI run `36249199445`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199445) |
 | Hosted CI | Pass | September 26 [run `36249199445`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199445) at `86575f9`: all five jobs ran and passed, including both Linux trait configurations, iOS tests, Release demo build, Android tests, lint and repository checks |
-| Hosted documentation build | Pass | [Docs run `36249199420`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199420) at `86575f9`: both catalogs converted with warnings as errors, merged, transformed and uploaded; deployment remains disabled |
-| Release and publication | Not performed | No tag, release, Pages publication, or signed external consumer |
+| Hosted documentation build | Pass | [Docs run `36249199420`](https://github.com/KalebCooper/swift-govinfo/actions/runs/36249199420) at `86575f9`: both catalogs converted with warnings as errors, merged, transformed and uploaded |
+| Pages deployment | Configured | GitHub Pages uses workflow publication through the main-only `github-pages` environment; successful main documentation builds deploy to [the documentation site](https://kalebcooper.github.io/swift-govinfo/); results appear in [deployment history](https://github.com/KalebCooper/swift-govinfo/deployments/activity_log?environments_filter=github-pages) |
+| Release and external consumer | Not performed | No tag, release or signed external consumer |
 
 On September 26, the repository CI job was updated to install Python before verification. Both
 `bash Scripts/verify.sh` and `bash Scripts/verify.sh --self-test` passed locally on macOS and in a
@@ -53,7 +54,8 @@ first enabled Android run compiled successfully but could not launch because Fou
 Swift 6.3.3 Android SDK omitted its system zlib dependency. The models target now links zlib only on
 Android; the full recorded XML and SDK suites passed on the emulator after this change. The
 portable lockfile, Android toolchain/action pins, cold-boot settings and strict Swift settings are
-preserved. Pages deployment is separate from documentation build verification and remains disabled.
+preserved. Pages deployment follows successful main documentation builds; pull requests build the site
+without publishing. Deployment timing remains provisional until a hosted publication is measured.
 
 Xcode artifact paths above are relative to this machine's temporary `ActionArtifacts/default`
 directory. `.build` logs and generated documentation are local artifacts, not committed products.
@@ -86,6 +88,6 @@ early-Congress source inventory remain separate coordinated work. Neither SDK de
 The repository-check CI lane validates actual source and fixture receipts. Platform/documentation
 workflows retain the Xcode 27 Apple lane, Android pins/cold-boot arguments and bounded timeouts.
 All five CI jobs and the documentation build have passed on hosted runners for
-`KalebCooper/swift-govinfo`. GitHub Pages deployment, a tag, a release object, demo runtime and a
-signed external consumer remain unverified. No sibling repository or shared plan is changed by
-this delivery.
+`KalebCooper/swift-govinfo`. GitHub Pages is configured for workflow publication after a successful
+main documentation build. A tag, release object, demo runtime and signed external consumer remain
+unverified. No sibling repository or shared plan is changed by this delivery.

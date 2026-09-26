@@ -53,8 +53,8 @@ jobs:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
-    # Disabled until documentation validation and publication are configured.
-    if: ${{ false }}
+    # Publish main after a successful build; pull requests only build documentation.
+    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
     # Provisional ceiling; no hosted timing evidence exists.
     timeout-minutes: 15
     environment:

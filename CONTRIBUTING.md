@@ -32,7 +32,8 @@ See [Implementation readiness](IMPLEMENTATION_READINESS.md) for current evidence
 
 Repository checks, formatting, Linux tests with both trait configurations, Android emulator tests,
 iOS simulator tests, the Release demo build and DocC builds run on pushes to main and pull requests.
-Pages deployment remains disabled. Job timeout ceilings reflect measured hosted qualification runs.
+Pages deployment follows successful documentation builds on main; pull requests only build the site.
+Job timeout ceilings reflect measured hosted qualification runs, with deployment timing still provisional.
 
 ## Recording sources
 
