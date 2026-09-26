@@ -164,6 +164,11 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
+      # The Swift image does not include Python, which verifies fixture receipts.
+      - name: Install verification dependencies
+        run: |
+          apt-get update
+          apt-get install --no-install-recommends -y python3
       - name: Verify source
         run: bash Scripts/verify.sh
       - name: Verify checks reject violations
